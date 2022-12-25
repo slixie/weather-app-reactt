@@ -1,0 +1,160 @@
+.Weather .page {
+  margin: 14px 0;
+  max-width: 700px;
+  border-radius: 28px;
+  padding: 35px 25px 20px 25px;
+  background-color: rgba(255, 255, 255, 0.568);
+}
+
+.Weather .typeCity,
+.Weather .center {
+  text-align: center;
+}
+
+.Weather .search-text {
+  background-color: rgba(255, 255, 255, 0.904);
+  padding: 6px 16px;
+  font-size: 16px;
+  border-color: rgba(0, 0, 0, 0.226);
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+.Weather .search-btn,
+.Weather .current {
+  padding: 6px 16px;
+  border-color: rgba(0, 0, 0, 0.226);
+  border-width: 1px;
+  border-radius: 8px;
+  color: #a76462;
+  transition: transform 0.2s;
+}
+
+.Weather .search-btn:hover,
+.Weather .current:hover {
+  color: #7c4847;
+  transform: scale(1.05);
+}
+
+.Weather .heading {
+  margin-top: 16px;
+}
+
+.Weather .city-name {
+  color: rgba(0, 0, 0, 0.822);
+  padding-top: 6px;
+  font-size: 31px;
+  margin-left: 18px;
+  font-weight: 600;
+}
+
+.Weather .cityName {
+  position: relative;
+  left: -6px;
+  font-family: "Lobster";
+  font-weight: 400;
+}
+
+.Weather .heading-item {
+  display: block;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.Weather .mainPage {
+  background-color: rgba(255, 255, 255, 0.966);
+  padding: 30px;
+  margin: 0 10px 0 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(75, 75, 75, 0.274);
+}
+
+.Weather .currentWeather {
+  margin-bottom: 10px;
+  margin-left: 14px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.Weather .city-temperature {
+  font-size: 57px;
+}
+
+.Weather .weather_description {
+  font-size: 20px;
+  margin-top: 16px;
+  text-transform: capitalize;
+}
+
+.Weather .icon_current_location {
+  font-size: 27px;
+  color: #a76462;
+  position: relative;
+  left: -4px;
+  top: -2px;
+  margin-right: 8px;
+}
+
+.Weather .main_icon {
+  position: relative;
+  top: -15px;
+}
+
+.Weather .units {
+  position: relative;
+  top: -30px;
+}
+
+.Weather .statistics {
+  display: inline;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.Weather .statistic {
+  font-weight: 500;
+  color: rgba(5, 5, 5, 0.836);
+}
+
+.Weather .credit {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Lobster", cursive;
+}
+
+.Weather .open-source-code {
+  color: #a05c59;
+  text-decoration: none;
+}
+
+.Weather .open-source-code:hover {
+  color: #7c4847;
+  text-decoration: underline;
+}
+
+.Weather .celsius-link,
+.Weather .fahrenheit-link {
+  color: #a76462;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.Weather .celsius-link:hover,
+.Weather .fahrenheit-link:hover {
+  color: #7c4847;
+  text-decoration: underline;
+}
+
+.Weather .active {
+  color: black;
+  cursor: default;
+}
+
+.Weather .active:hover {
+  text-decoration: none;
+  color: black;
+}
