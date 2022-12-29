@@ -87,8 +87,9 @@ export default function Weather() {
 
         <p className="credit">
           <a
-            href="https://github.com/slixie/my-site"
+            href="https://github.com/slixie/weather-app-reactt"
             className="open-source-code"
+            target="_blank"
           >
             Coded
           </a>{" "}
