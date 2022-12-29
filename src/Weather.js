@@ -90,10 +90,11 @@ export default function Weather() {
             href="https://github.com/slixie/weather-app-reactt"
             className="open-source-code"
             target="_blank"
+            rel="noreferrer"
           >
             Coded
           </a>{" "}
-          by Mariia Sytnyk
+          by Mariia Sytnykkk
         </p>
       </div>
     </div>
