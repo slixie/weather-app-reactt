@@ -1,5 +1,6 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather() {
   let weatherData = {
@@ -82,6 +83,46 @@ export default function Weather() {
           </div>
           <div className="col-3 statistics">
             <div className="statistic"> TEMP MIN </div>2 °C
+          </div>
+        </div>
+
+        <div className="col-12">
+          <p className="forecast">Weather forecast</p>
+        </div>
+
+        <div className="weather_forecast" id="weather_forecast">
+          {" "}
+          <div className="row forecastDays">
+            <div className="col-2 days">
+              Mon <br />
+              <i className="fa-solid fa-sun forecastIcon"></i>
+              <br /> 20°/24°
+            </div>
+            <div className="col-2 days">
+              Tue <br />
+              <i className="fa-solid fa-sun forecastIcon"></i>
+              <br /> 19°/22°
+            </div>
+            <div className="col-2 days">
+              Wed <br />
+              <i className="fa-solid fa-cloud forecastIcon"></i>
+              <br /> 17°/20°
+            </div>
+            <div className="col-2 days">
+              Thu <br />
+              <i className="fa-solid fa-cloud-bolt forecastIcon"></i>
+              <br /> 15°/17°
+            </div>
+            <div className="col-2 days">
+              Fri <br />
+              <i className="fa-solid fa-bolt-lightning forecastIcon"></i>
+              <br /> 17°/20°
+            </div>
+            <div className="col-2 days">
+              Sat <br />
+              <i className="fa-solid fa-cloud forecastIcon"></i>
+              <br /> 17°/20°
+            </div>
           </div>
         </div>
 

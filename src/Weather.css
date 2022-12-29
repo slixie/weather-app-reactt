@@ -1,5 +1,5 @@
 .Weather .page {
-  margin: 14px 0;
+  margin: 25px auto;
   max-width: 700px;
   border-radius: 28px;
   padding: 35px 25px 20px 25px;
@@ -118,8 +118,42 @@
   color: rgba(5, 5, 5, 0.836);
 }
 
+.Weather .forecast {
+  margin-top: 20px;
+  margin-left: 14px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.808);
+  position: relative;
+  bottom: -7px;
+}
+
+.Weather .weather_forecast {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.966);
+  padding: 15px 5px;
+  margin: 0 10px 10px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(75, 75, 75, 0.274);
+}
+
+.Weather .forecast_day,
+.forecast_day_temperature_max {
+  font-weight: 500;
+}
+
+.Weather .forecast_day_temperature_max {
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.Weather .forecast_day_temperature_min {
+  color: rgb(71, 70, 70);
+}
+
 .Weather .credit {
   display: block;
+  margin-top: 10px;
   text-align: center;
   font-weight: 500;
   font-family: "Lobster", cursive;
