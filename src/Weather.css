@@ -97,10 +97,10 @@
   margin-right: 8px;
 }
 
-.Weather .main_icon {
+.Weather canvas {
   position: relative;
-  top: -15px;
-  width: 100px;
+  bottom: -9px;
+  margin-right: 10px;
 }
 
 .Weather .units {
