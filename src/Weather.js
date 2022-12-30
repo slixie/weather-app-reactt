@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function hadleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
-      date: "Friday 07:47",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       temperature: response.data.main.temp,
@@ -27,7 +27,9 @@ export default function Weather(props) {
       <div className="Weather">
         <div className="page">
           <div className="col-12">
-            <p className="heading-item">{weatherData.date}</p>
+            <p className="heading-item">
+              <FormattedDate date={weatherData.date} />
+            </p>
           </div>
           <form className="typeCity">
             <input
