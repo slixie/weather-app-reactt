@@ -79,7 +79,7 @@
 }
 
 .Weather .city-temperature {
-  font-size: 57px;
+  font-size: 60px;
 }
 
 .Weather .weather_description {
@@ -100,6 +100,7 @@
 .Weather .main_icon {
   position: relative;
   top: -15px;
+  width: 100px;
 }
 
 .Weather .units {
