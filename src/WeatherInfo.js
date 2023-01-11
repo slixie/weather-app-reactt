@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <div className="col-12">
-        <p className="currentWeather">Current weather</p>{" "}
+        <p className="titles">Current weather</p>{" "}
       </div>
       <div className="row mainPage">
         <div className="col-6 center">
@@ -43,58 +43,6 @@ export default function WeatherInfo(props) {
           {Math.round(props.data.temp_min)} °C
         </div>
       </div>
-
-      <div className="col-12">
-        <p className="forecast">Weather forecast</p>
-      </div>
-
-      <div className="weather_forecast" id="weather_forecast">
-        {" "}
-        <div className="row forecastDays">
-          <div className="col-2 days">
-            Mon <br />
-            <i className="fa-solid fa-sun forecastIcon"></i>
-            <br /> 20°/24°
-          </div>
-          <div className="col-2 days">
-            Tue <br />
-            <i className="fa-solid fa-sun forecastIcon"></i>
-            <br /> 19°/22°
-          </div>
-          <div className="col-2 days">
-            Wed <br />
-            <i className="fa-solid fa-cloud forecastIcon"></i>
-            <br /> 17°/20°
-          </div>
-          <div className="col-2 days">
-            Thu <br />
-            <i className="fa-solid fa-cloud-bolt forecastIcon"></i>
-            <br /> 15°/17°
-          </div>
-          <div className="col-2 days">
-            Fri <br />
-            <i className="fa-solid fa-bolt-lightning forecastIcon"></i>
-            <br /> 17°/20°
-          </div>
-          <div className="col-2 days">
-            Sat <br />
-            <i className="fa-solid fa-cloud forecastIcon"></i>
-            <br /> 17°/20°
-          </div>
-        </div>
-      </div>
-
-      <p className="credit">
-        <a
-          href="https://github.com/slixie/weather-app-reactt"
-          className="open-source-code"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Coded
-        </a>{" "}
-        by Mariia Sytnykkk
-      </p>
     </div>
   );
 }

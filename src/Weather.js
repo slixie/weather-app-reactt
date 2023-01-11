@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -11,6 +12,7 @@ export default function Weather(props) {
   function hadleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       icon: response.data.weather[0].icon,
@@ -45,9 +47,9 @@ export default function Weather(props) {
       <div className="Weather">
         <div className="page">
           <div className="col-12">
-            <p className="heading-item">
+            <div className="heading-item">
               <FormattedDate date={weatherData.date} />
-            </p>
+            </div>
           </div>
           <form className="typeCity" onSubmit={handleSubmit}>
             <input
@@ -65,6 +67,19 @@ export default function Weather(props) {
             </button>
           </form>
           <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinaes={weatherData.coordinates} />
+
+          <p className="credit">
+            <a
+              href="https://github.com/slixie/weather-app-reactt"
+              className="open-source-code"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Coded
+            </a>{" "}
+            by Mariia Sytnyk
+          </p>
         </div>
       </div>
     );
