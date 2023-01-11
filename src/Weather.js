@@ -51,7 +51,7 @@ export default function Weather(props) {
               <FormattedDate date={weatherData.date} />
             </div>
           </div>
-          <form className="typeCity" onSubmit={handleSubmit}>
+          <form className="typeCity center" onSubmit={handleSubmit}>
             <input
               className="search-text"
               type="text"
@@ -61,9 +61,6 @@ export default function Weather(props) {
             />
             <button className="search-btn">
               <i className="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <button className="current">
-              <i className="fa-solid fa-location-dot"></i>
             </button>
           </form>
           <WeatherInfo data={weatherData} />
